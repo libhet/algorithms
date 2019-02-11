@@ -2,8 +2,14 @@
 #define ALGORITHMS_STRINGS_H
 
 #include <string>
+#include <exception>
 
 namespace alg {
+
+    class EvaluateExpressionException : public std::exception {
+
+    };
+
 // Напишите программу, содержит ли введенное
 // пользователем выражение корректно вложенные скобки.
 // Применять в выражении другие символы.
